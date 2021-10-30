@@ -5,7 +5,8 @@ const loginScreen = () => {
     return (
        <KeyboardAvoidingView
        style={styles.container}
-       behavior="padding">
+    //    behavior="padding"
+       >
             <View style={styles.inputContainer}>
                 <TextInput  placeholder='Email'
                 // value={email}
