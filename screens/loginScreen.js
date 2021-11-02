@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: "#adb5bd"
+        backgroundColor: "#1a535c"
     },
 
     inputContainer: {
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     },
 
     button: {
-        backgroundColor: '#3a86ff',
+        backgroundColor: '#4ECDC4',
         width: "100%",
         padding: 15,
         justifyContent: 'center',
@@ -78,14 +78,16 @@ const styles = StyleSheet.create({
     },
 
     buttonText: {
-        color: '#fff'
+        color: '#fff',
+        fontWeight: 'bold',
     },
     buttonOutline: {
         backgroundColor: "#fff",
-        borderColor: "#3a86ff",
-        borderWidth: 2,
+        // borderColor: "#4ECDC4",
+        // borderWidth: 2,
     },
     buttonOutlineText: {
-        color: "#3a86ff"
+        color: "#1a535c",
+        fontWeight: 'bold',
     },
 })
