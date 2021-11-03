@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
 
     welcome: { 
         color: "#fff",
-        // fontWeight: "bold",
+        fontWeight: "bold",
         fontSize: 16,
     },
     welcome:{
