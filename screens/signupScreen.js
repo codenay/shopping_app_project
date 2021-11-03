@@ -9,24 +9,24 @@ const loginScreen = () => {
     const navigation = useNavigation()
 
     return (
-       <KeyboardAvoidingView style={styles.container}>
-
-            <View style={styles.titleHeader}>
-                <Text style={styles.welcome}>
-                    WELCOME TO
-                </Text>
-                <Text style={styles.title}>
-                    SPOOKY FURNITURE
-                </Text>
-            </View>
+       <KeyboardAvoidingView
+       style={styles.container}
+    //    behavior="padding"
+       >
 
             <View style={styles.loginHeader}>
                 <Text style={styles.loginText}>
-                    Account Log in
+                    Sign Up for an Account
                 </Text>
             </View>
 
             <View style={styles.inputContainer}>
+
+            <TextInput  placeholder='Username'
+                // value={email}
+                // onChangeText ={text => setEmail(text)}
+                style={styles.input}/>
+
                 <TextInput  placeholder='Email'
                 // value={email}
                 // onChangeText ={text => setEmail(text)}
@@ -37,20 +37,28 @@ const loginScreen = () => {
                 // onChangeText ={text => setPassword(text)}
                 style={styles.input}
                 secureTextEntry/>
+
+                <TextInput  placeholder='Confirm Password'
+                // value={password}
+                // onChangeText ={text => setPassword(text)}
+                style={styles.input}
+                secureTextEntry/>
             </View>
 
 
             <View style={styles.buttonContainer}>
                 <TouchableOpacity onPress={()=> {navigation.navigate("Home")}}
                 style={styles.button}>
-                    <Text style={styles.buttonText}>Log in</Text>
+                    <Text style={styles.buttonText}>Sign Up</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity 
-                onPress={() => navigation.navigate("Sign up")}
-                style={[styles.button, styles.buttonOutline]}>
-                    <Text style={styles.buttonOutlineText}>Sign up</Text>
-                </TouchableOpacity>
+                <View style={styles.signupAlt}>
+                    <TouchableOpacity onPress={()=> {navigation.navigate("Log in")}}>
+                        <Text style={styles.signupAltText}>Already have an Account?</Text>
+                    </TouchableOpacity>
+                </View>
+
+                
             </View>
        </KeyboardAvoidingView>
     )
@@ -70,7 +78,6 @@ const styles = StyleSheet.create({
     inputContainer: {
         width: "80%",
         // height: "10%",
-        
     },
 
     input: {
@@ -113,36 +120,23 @@ const styles = StyleSheet.create({
 
     loginHeader: {
         width: '100%',
-        // height: '3%',
+        height: '5%',
         justifyContent: "center",
         alignItems: "center",
-        marginBottom: 10,
+        marginBottom: 5,
     },
     loginText: {
         color: "#fff",
         // fontWeight: "bold",
         fontSize: 16,
+        
     },
 
-    welcome: { 
-        color: "#fff",
-        // fontWeight: "bold",
-        fontSize: 16,
+    signupAlt:{
+        marginTop: 10,
+        
     },
-    welcome:{
-        fontSize: 12,
-        color: '#fff'
-    },
-    title: {
-        color: "#fff",
-        fontWeight: "bold",
-        fontSize: 26,
-    },
-    titleHeader:{
-        width: '100%',
-        height: '5%',
-        justifyContent: "center",
-        alignItems: "center",
-        marginBottom: 80,
+    signupAltText:{
+        color: "#4ECDC4"
     },
 })
