@@ -15,7 +15,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen options= {{headerShown: false}} name="Log in" component={loginScreen} />
-        <Stack.Screen  name="Home" component={homeScreen} />
+        <Stack.Screen options= {{headerShown: false}} name="Home" component={homeScreen} />
         <Stack.Screen options= {{headerShown: false}} name="Sign up" component={signupScreen} />
       </Stack.Navigator>
     </NavigationContainer>
@@ -23,9 +23,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
+  container: { 
     alignItems: 'center',
     justifyContent: 'center',
   },
