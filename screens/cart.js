@@ -29,10 +29,10 @@ const cart = () => {
                     <View style={styles.cartItemInfo}>
                         <Text style={styles.productName}>Billy bookcase</Text>
                         <View style={styles.rating}>
-                            <Ionicons name="star-outline" size={16} color="#40916c" />
-                            <Ionicons name="star-outline" size={16} color="#40916c" />
-                            <Ionicons name="star-outline" size={16} color="#40916c" />
-                            <Ionicons name="star-outline" size={16} color="#40916c" />
+                            <Ionicons name="star" size={16} color="#40916c" />
+                            <Ionicons name="star" size={16} color="#40916c" />
+                            <Ionicons name="star" size={16} color="#40916c" />
+                            <Ionicons name="star" size={16} color="#40916c" />
                         </View>
                         <Text style={styles.priceText}>Ghc 299.99</Text>
                     </View>
@@ -54,9 +54,9 @@ const cart = () => {
                     <View style={styles.cartItemInfo}>
                         <Text style={styles.productName}>Kallax sofa</Text>
                         <View style={styles.rating}>
-                            <Ionicons name="star-outline" size={16} color="#40916c" />
-                            <Ionicons name="star-outline" size={16} color="#40916c" />
-                            <Ionicons name="star-outline" size={16} color="#40916c" />
+                            <Ionicons name="star" size={16} color="#40916c" />
+                            <Ionicons name="star" size={16} color="#40916c" />
+                            <Ionicons name="star" size={16} color="#40916c" />
                         </View>
                         <Text style={styles.priceText}>Ghc 600.00</Text>
                     </View>
@@ -78,11 +78,11 @@ const cart = () => {
                     <View style={styles.cartItemInfo}>
                         <Text style={styles.productName}>coffee table</Text>
                         <View style={styles.rating}>
-                            <Ionicons name="star-outline" size={16} color="#40916c" />
-                            <Ionicons name="star-outline" size={16} color="#40916c" />
-                            <Ionicons name="star-outline" size={16} color="#40916c" />
-                            <Ionicons name="star-outline" size={16} color="#40916c" />
-                            <Ionicons name="star-outline" size={16} color="#40916c" />
+                            <Ionicons name="star" size={16} color="#40916c" />
+                            <Ionicons name="star" size={16} color="#40916c" />
+                            <Ionicons name="star" size={16} color="#40916c" />
+                            <Ionicons name="star" size={16} color="#40916c" />
+                            <Ionicons name="star" size={16} color="#40916c" />
                         </View>
                         <Text style={styles.priceText}>Ghc 599.99</Text>
                     </View>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
-import { ScrollView, StyleSheet, Text, View, TouchableOpacity, TextInput } from 'react-native'
+import { ScrollView, StyleSheet, Text, View, TouchableOpacity, TextInput, Image } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
 
 const homeScreen = () => {
@@ -38,33 +38,37 @@ const homeScreen = () => {
 
         <ScrollView style={styles.itemsCOntainer} >
                     <View style={styles.items}>
-                        <View style={styles.itemImg}></View>
+                        <View style={styles.itemImg}>
+                            <Image source={require('../img/pexels-medhat-ayad-447592.jpg')} style={styles.himg} />
+                        </View>
                         <View style={styles.itemInfo}>
                             <Text style={styles.productName}>Docksta table</Text>
                             <View style={styles.rating}>
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
                             </View>
                             <View style={styles.priceBtn}>
                                 <Text style={styles.priceText}>GHC 299.99</Text>
-                                <TouchableOpacity style={styles.PurchaseBtn}>
+                                <TouchableOpacity style={styles.PurchaseBtn} onPress={()=> {navigation.navigate("Details")}}>
                                     <Text style={styles.PurchaseBtnText}>PURCHASE</Text>
                                 </TouchableOpacity>
                             </View>
                         </View>
                     </View>
                     <View style={styles.items}>
-                        <View style={styles.itemImg}></View>
+                        <View style={styles.itemImg}>
+                            <Image source={require('../img/pexels-charlotte-may-5824890.jpg')} style={styles.himg} />
+                        </View>
                         <View style={styles.itemInfo}>
                             <Text style={styles.productName}>Ektorp sofa</Text>
                             <View style={styles.rating}>
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
                             </View>
                             <View style={styles.priceBtn}>
                                 <Text style={styles.priceText}>GHC 450.99</Text>
@@ -75,14 +79,16 @@ const homeScreen = () => {
                         </View>
                     </View>
                     <View style={styles.items}>
-                        <View style={styles.itemImg}></View>
+                        <View style={styles.itemImg}>
+                        <Image source={require('../img/pexels-artem-lysenko-2258083.jpg')} style={styles.himg} />
+                        </View>
                         <View style={styles.itemInfo}>
                             <Text style={styles.productName}>Poäng armchair</Text>
                             <View style={styles.rating}>
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
                             </View>
                             <View style={styles.priceBtn}>
                                 <Text style={styles.priceText}>GHC 510.99</Text>
@@ -93,14 +99,16 @@ const homeScreen = () => {
                         </View>
                     </View>
                     <View style={styles.items}>
-                        <View style={styles.itemImg}></View>
+                        <View style={styles.itemImg}>
+                        <Image source={require('../img/pexels-charlotte-may-5824901.jpg')} style={styles.himg} />
+                        </View>
                         <View style={styles.itemInfo}>
                             <Text style={styles.productName}>Billy bookcase</Text>
                             <View style={styles.rating}>
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
                             </View>
                             <View style={styles.priceBtn}>
                                 <Text style={styles.priceText}>GHC 240.99</Text>
@@ -111,14 +119,16 @@ const homeScreen = () => {
                         </View>
                     </View>
                     <View style={styles.items}>
-                        <View style={styles.itemImg}></View>
+                        <View style={styles.itemImg}>
+                        <Image source={require('../img/pexels-dalila-dalprat-2179214.jpg')} style={styles.himg} />
+                        </View>
                         <View style={styles.itemInfo}>
                             <Text style={styles.productName}>Kallax sofa</Text>
                             <View style={styles.rating}>
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
                             </View>
                             <View style={styles.priceBtn}>
                                 <Text  style={styles.priceText}>GHC 309.99</Text>
@@ -130,14 +140,16 @@ const homeScreen = () => {
                         </View>
                     </View>
                     <View style={styles.items}>
-                        <View style={styles.itemImg}></View>
+                        <View style={styles.itemImg}>
+                        <Image source={require('../img/pexels-ksenia-chernaya-3965513.jpg')} style={styles.himg} />
+                        </View>
                         <View style={styles.itemInfo}>
                             <Text style={styles.productName}>coffee tables</Text>
                             <View style={styles.rating}>
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
                             </View>
                             <View style={styles.priceBtn}>
                                 <Text style={styles.priceText}>GHC 499.99</Text>
@@ -148,15 +160,17 @@ const homeScreen = () => {
                         </View>
                     </View>
                     <View style={styles.items}>
-                        <View style={styles.itemImg}></View>
+                        <View style={styles.itemImg}>
+                        <Image source={require('../img/pexels-mikhail-nilov-6707630.jpg')} style={styles.himg} />
+                        </View>
                         <View style={styles.itemInfo}>
                             <Text style={styles.productName}>Swedish Desk</Text>
                             <View style={styles.rating}>
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
                             </View>
                             <View style={styles.priceBtn}>
                                 <Text style={styles.priceText}>GHC 290.99</Text>
@@ -167,14 +181,16 @@ const homeScreen = () => {
                         </View>
                     </View>
                     <View style={styles.items}>
-                        <View style={styles.itemImg}></View>
+                        <View style={styles.itemImg}>
+                        <Image source={require('../img/pexels-murat-soyluoglu-1209776.jpg')} style={styles.himg} />
+                        </View>
                         <View style={styles.itemInfo}>
                             <Text style={styles.productName}>Scandinavian Bed</Text>
                             <View style={styles.rating}>
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
                             </View>
                             <View style={styles.priceBtn}>
                                 <Text style={styles.priceText}>GHC 255.99</Text>
@@ -185,14 +201,16 @@ const homeScreen = () => {
                         </View>
                     </View>
                     <View style={styles.items}>
-                        <View style={styles.itemImg}></View>
+                        <View style={styles.itemImg}>
+                        <Image source={require('../img/pexels-pixabay-279618.jpg')} style={styles.himg} />
+                        </View>
                         <View style={styles.itemInfo}>
                             <Text style={styles.productName}>Norwegian vase</Text>
                             <View style={styles.rating}>
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
                             </View>
                             <View style={styles.priceBtn}>
                                 <Text style={styles.priceText}>GHC 80.99</Text>
@@ -203,13 +221,15 @@ const homeScreen = () => {
                         </View>
                     </View>
                     <View style={styles.items}>
-                        <View style={styles.itemImg}></View>
+                        <View style={styles.itemImg}>
+                        <Image source={require('../img/pexels-rachel-claire-4846455.jpg')} style={styles.himg} />
+                        </View>
                         <View style={styles.itemInfo}>
                             <Text style={styles.productName}>Sladda Table</Text>
                             <View style={styles.rating}>
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
                             </View>
                             <View style={styles.priceBtn}>
                                 <Text style={styles.priceText}>GHC 130.00</Text>
@@ -220,15 +240,17 @@ const homeScreen = () => {
                         </View>
                     </View>
                     <View style={styles.items}>
-                        <View style={styles.itemImg}></View>
+                        <View style={styles.itemImg}>
+                        <Image source={require('../img/pexels-shirin-2986011.jpg')} style={styles.himg} />
+                        </View>
                         <View style={styles.itemInfo}>
                             <Text style={styles.productName}>Krossa Armchair</Text>
                             <View style={styles.rating}>
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
-                                <Ionicons name="star-outline" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
+                                <Ionicons name="star" size={16} color="#40916c" />
                             </View>
                             <View style={styles.priceBtn}>
                                 <Text style={styles.priceText}>GHC 280.99</Text>
@@ -299,10 +321,15 @@ const styles = StyleSheet.create({
     active: {
         backgroundColor: '#b7e4c7',
     },
-
+    himg:{
+        width: "100%",
+        height: 170,
+        borderRadius: 20,
+        marginRight: 20,
+    },
     itemImg:{
-        width: "50%",
-        height: 150,
+        width: "40%",
+        height: 170,
         // borderColor: "#6d6875",
         borderRadius: 20,
         // borderWidth: .5,
@@ -310,6 +337,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#E3E9F3',
     },
     itemInfo:{
+        marginLeft: 20,
         justifyContent: 'space-between',
         alignItems: 'center'
     },
